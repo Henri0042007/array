@@ -9,11 +9,25 @@
     */
 
     //ENTRADA
-    
+    const remove = prompt(`Qual carro voce deseja remover da lista? "Tiggo", "Sportage", "Tucson", "EcoSport`).toLowerCase()
 
     //PROCESSAMENTO
+    let carros = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+
+    let lista = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    if (remove == "tiggo") {
+        lista = ["Sportage", "Tucson", "EcoSport"];
+    } else if (remove == "sportage") {
+        lista = ["Tiggo", "Tucson", "EcoSport"];
+    } else if (remove == "tucson") {
+        lista =  ["Tiggo", "Sportage", "EcoSport"];
+    } else if (remove == "ecoSport") {
+        lista = ["Tiggo", "Sportage", "Tucson"];
+    }
 
 
     //SAÍDA
+    alert(`nova lista ${lista}`)
+    alert(`lista antiga ${carros}`)
 
 </script>
